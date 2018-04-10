@@ -1,6 +1,6 @@
 {
-    "name": "se468/laravel-reputation",
-    "description": "Laravel Reputation and Rating Engine",
+    "name": "se468/laravel-ratings",
+    "description": "Laravel Ratings Engine",
     "keywords": ["laravel", "package"],
     "license": "MIT",
     "authors": [
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "se468\\Reputation\\": "src"
+            "se468\\Ratings\\": "src"
         },
         "classmap": [
             "tests"
@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "se468\\Reputation\\ReputationServiceProvider"
+                "se468\\Ratings\\RatingsServiceProvider"
             ]
         }
     }

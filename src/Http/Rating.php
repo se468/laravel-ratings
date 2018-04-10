@@ -1,5 +1,5 @@
 <?php
-namespace se468\Reputation;
+namespace se468\Ratings;
 
 use Illuminate\Database\Eloquent\Model;
 

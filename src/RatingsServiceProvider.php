@@ -1,10 +1,10 @@
 <?php
 
-namespace se468\Reputation;
+namespace se468\Ratings;
 
 use Illuminate\Support\ServiceProvider;
 
-class ReputationServiceProvider extends ServiceProvider
+class RatingsServiceProvider extends ServiceProvider
 {
     
     /**
@@ -16,7 +16,7 @@ class ReputationServiceProvider extends ServiceProvider
     {
         /*
         $this->loadRoutesFrom(__DIR__."/routes/web.php");
-        $this->loadViewsFrom(__DIR__."/resources/views", "Reputation");
+        $this->loadViewsFrom(__DIR__."/resources/views", "Ratings");
         */
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }

@@ -1,14 +1,14 @@
 <?php
-namespace se468\Reputation\Traits;
+namespace se468\Ratings\Traits;
 
-use se468\Reputation\Rating;
-use se468\Reputation\RatingReceivable;
+use se468\Ratings\Rating;
+use se468\Ratings\RatingReceivable;
 
 trait CanGiveRating
 {
     public function ratingsGiven()
     {
-        return $this->hasMany('se468\Reputation\Rating', 'rater_id');
+        return $this->hasMany('se468\Ratings\Rating', 'rater_id');
     }
 
     public function rate(RatingReceivable $ratable, $ratingValue)

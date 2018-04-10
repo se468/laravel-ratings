@@ -1,11 +1,11 @@
-# Laravel Reputation Engine
-Reputation/Ratings engine for your User class.
+# Laravel Ratings Engine
+Ratings engine for Laravel
 
 ## Installation
-0. `composer install se468/laravel-reputation`
+0. `composer install se468/laravel-ratings`
 0. `php artisan migrate` to migrate the tables
-0. Add `CanReceiveReputation` trait to your model that receives reputation (User, Company, Project...) and implement `RatingReceivable` interface to the model.
-0. Add `CanGiveReputation` trait to your model that needs to give reputation (Usually User model) and implement `RatingGivable` interface to the model.
+0. Add `CanReceiveRatings` trait to your model that receives Ratings (User, Company, Project...) and implement `RatingReceivable` interface to the model.
+0. Add `CanGiveRatings` trait to your model that needs to give Ratings (Usually User model) and implement `RatingGivable` interface to the model.
 
 ## Usage
 
@@ -16,7 +16,7 @@ $companyOverallRating = $company->getOverallRating();
 ```
 
 
-### CanReceiveReputation
+### CanReceiveRatings
 
 Methods:
 ```
@@ -38,7 +38,7 @@ returns overall rating, average of all ratings
 ```
 
 
-### CanGiveReputation
+### CanGiveRatings
 Methods:
 ```
 rate - give a rating

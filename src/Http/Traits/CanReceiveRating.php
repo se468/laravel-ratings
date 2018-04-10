@@ -1,13 +1,13 @@
 <?php
-namespace se468\Reputation\Traits;
+namespace se468\Ratings\Traits;
 
-use se468\Reputation\Rating;
+use se468\Ratings\Rating;
 
 trait CanReceiveRating
 {
     public function ratingsReceived()
     {
-        return $this->morphMany('se468\Reputation\Rating', 'ratables');
+        return $this->morphMany('se468\Ratings\Rating', 'ratables');
     }
 
     public function getOverallRating()
