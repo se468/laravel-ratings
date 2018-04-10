@@ -80,7 +80,7 @@ rate(RatingReceivable $ratable, $ratingValue)
 ```
 
 Example:
-```
+```php
 $rating = new Rating(5);
 $user->rate($company, $rating)
 ```
