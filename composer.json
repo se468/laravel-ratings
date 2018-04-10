@@ -1,0 +1,36 @@
+{
+    "name": "se468/laravel-reputation",
+    "description": "Laravel Reputation and Rating Engine",
+    "keywords": ["laravel", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Seyong Cho",
+            "email": "seyong@seyongcho.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.5"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9.2|~1.0.0",
+        "phpunit/phpunit" : "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "se468\\Reputation\\": "src"
+        },
+        "classmap": [
+            "tests"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "se468\\Reputation\\ReputationServiceProvider"
+            ]
+        }
+    }
+}
