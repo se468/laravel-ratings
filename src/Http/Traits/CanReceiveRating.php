@@ -25,10 +25,6 @@ trait CanReceiveRating
         return $total / count($this->ratingsReceived);
     }
 
-    public function getRatingsFrom($rater)
-    {
-    }
-
     public function getAllRatings()
     {
         return $this->ratingsReceived;

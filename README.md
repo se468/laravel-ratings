@@ -59,30 +59,25 @@ public function rateCompany(Request $request)
 
 ### CanReceiveRatings Trait
 #### Getting all ratings:
-```
-getAllRatings()
-
-returns array of all ratings received
+```php
+ratingsReceived() - morphMany to Ratings
 ```
 
 #### Getting overall (average) rating:
-```
+```php
 getOverallRating() 
-
-returns overall rating, average of all ratings
 ```
 
 
 ### CanGiveRatings Trait
-#### Giving a rating:
-```
-rate(RatingReceivable $ratable, $ratingValue)
+#### Getting ratings given by this:
+```php
+ratingsGiven() - hasMany to Ratings
 ```
 
-Example:
+#### Giving a rating:
 ```php
-$rating = new Rating(5);
-$user->rate($company, $rating)
+rate(RatingReceivable $ratable, $ratingValue)
 ```
 
 ### Rating
