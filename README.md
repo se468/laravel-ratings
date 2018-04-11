@@ -1,5 +1,13 @@
 # Laravel Ratings Engine
+[![Latest Stable Version](https://poser.pugx.org/se468/laravel-ratings/v/stable)](https://packagist.org/packages/se468/laravel-ratings)
+[![Total Downloads](https://poser.pugx.org/se468/laravel-ratings/downloads)](https://packagist.org/packages/se468/laravel-ratings)
+[![License](https://poser.pugx.org/se468/laravel-ratings/license)](https://packagist.org/packages/se468/laravel-ratings)
+
+
 Ratings engine for Laravel using polymorphic relationships.
+
+**DEMO** : [here](http://package-demos.seyongcho.com/rating)
+
 
 ## Installation
 1. `composer require se468/laravel-ratings`
