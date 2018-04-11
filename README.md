@@ -2,10 +2,10 @@
 Ratings engine for Laravel using polymorphic relationships.
 
 ## Installation
-0. `composer install se468/laravel-ratings`
-0. `php artisan migrate` to migrate the tables
-0. Add `CanReceiveRatings` trait to your model that receives Ratings (`App\User`, `App\Company`, `App\Project` .. whatever you need to receive ratings for) and implement `RatingReceivable` interface to the model.
-0. Add `CanGiveRatings` trait to your model that needs to give Ratings (Usually `App\User`).
+1. `composer install se468/laravel-ratings`
+1. `php artisan migrate` to migrate the tables
+1. Add `CanReceiveRatings` trait to your model that receives Ratings (`App\User`, `App\Company`, `App\Project` .. whatever you need to receive ratings for) and implement `RatingReceivable` interface to the model.
+1. Add `CanGiveRatings` trait to your model that needs to give Ratings (Usually `App\User`).
 
 Example (CanGiveRatings):
 ```php
