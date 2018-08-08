@@ -58,7 +58,7 @@ public function rateCompany(Request $request)
     $input = $request->all();
     $company = Company::find($input["id"]);
     
-    auth()->user()->rate($company, $input["rating"]);
+    auth()->user()->rate($company, $input["rating"], 'Some Comment');
 
     return redirect()->back();
 }

@@ -11,13 +11,15 @@ trait CanGiveRating
         return $this->hasMany('se468\Ratings\Rating', 'rater_id');
     }
 
-    public function rate(RatingReceivable $ratable, $ratingValue)
+    public function rate(RatingReceivable $ratable, $ratingValue, $comment = null)
     {
         $rating = Rating::create([
             'rating' => $ratingValue,
-            'rater_id' => $this->id
+            'rater_id' => $this->id,
+            'comment' => $comment
         ]);
+
         $ratable->ratingsReceived()->save($rating);
-        return $ratable;
+        return $rating;
     }
 }

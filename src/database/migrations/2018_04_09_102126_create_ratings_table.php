@@ -19,6 +19,7 @@ class CreateRatingsTable extends Migration
             $table->integer('rater_id')->nullable();
             $table->integer('ratables_id')->nullable();
             $table->string('ratables_type')->nullable();
+            $table->text('comment')->nullable();
             $table->timestamps();
         });
     }
